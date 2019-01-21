@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Train Scheduler</title>
+  <link href="/Users/SahraanMohammed/Desktop/hasanainm.github.io/Train-Scheduler/assets/css/style.css" rel="stylesheet"
+    type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron" id="jumbo-color">
+      <h1 class="text-center" id="color-one">Anytime is Train Time</h1>
+      <h3 class="text-center" id="color-two">Choo Choo. Chee Chee.</h3>
+    </div>
+    <div class="card card-default">
+      <div class="card-header" id="header-font">
+        <h5>Current Train Scheduler</h5>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Train Name</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Frequency(Min)</th>
+              <th scope="col">Next Arrival</th>
+              <th scope="col">Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody id="add-row">
+          
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+    <br>
+    <div class="card card-default">
+      <div class="card-header" id="header">
+        <h5>Add Train</h5>
+      </div>
+      <div class="card-body">
+        <form>
+          <label for="train-name">
+            <h6>Train Name</h6>
+          </label>
+          <input type="text" class="form-control" id="name-input">
+        </form>
+        <br>
+        <form>
+          <label for="Destination">
+            <h6>Destination</h6>
+          </label>
+          <input type="text" class="form-control" id="destination-input">
+        </form>
+        <br>
+        <form>
+          <label for="train-name">
+            <h6>First Train Time (HH:mm -military time)</h6>
+          </label>
+          <input type="text" class="form-control" id="time-input">
+        </form>
+        <br>
+        <form>
+          <label for="train-name">
+            <h6>Frequency(Min)</h6>
+          </label>
+          <input type="text" class="form-control" id="frequency-input">
+        </form>
+        <br>
+        <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+      </div>
+
+
+    </div>
+  </div>
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="/Users/SahraanMohammed/Desktop/hasanainm.github.io/Train-Scheduler/assets/javascript/app.js"></script>
+
+
+</body>
+
+</html>
